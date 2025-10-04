@@ -4,11 +4,11 @@ public class Radio {
     private int maxStation;
 
     public Radio() {
-this.maxStation = 10;
+        this.maxStation = 10;
     }
 
     public Radio(int stationsCount) {
-this.maxStation = stationsCount - 1;
+        this.maxStation = stationsCount - 1;
     }
 
     public void next() {
