@@ -5,7 +5,7 @@ public class RadioTest {
 
     @Test
     public void testBorder() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(6);
 
@@ -16,7 +16,7 @@ public class RadioTest {
 
     @Test
     public void testBorder2() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(-6);
 
@@ -27,7 +27,7 @@ public class RadioTest {
 
     @Test
     public void testBorder3() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(18);
 
@@ -38,7 +38,7 @@ public class RadioTest {
 
     @Test
     public void testBorder4() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(-1);
 
@@ -49,7 +49,7 @@ public class RadioTest {
 
     @Test
     public void testBorder5() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(0);
 
@@ -60,7 +60,7 @@ public class RadioTest {
 
     @Test
     public void testBorder6() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(1);
 
@@ -71,7 +71,7 @@ public class RadioTest {
 
     @Test
     public void testBorder7() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(8);
 
@@ -82,7 +82,7 @@ public class RadioTest {
 
     @Test
     public void testBorder8() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(9);
 
@@ -93,7 +93,7 @@ public class RadioTest {
 
     @Test
     public void TestNextStation() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(9);
 
@@ -235,7 +235,7 @@ public class RadioTest {
 
     @Test
     public void TestStationPrev() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(0);
 
@@ -259,7 +259,7 @@ public class RadioTest {
 
     @Test
     public void testBorder9() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(10);
 
@@ -270,7 +270,7 @@ public class RadioTest {
 
     @Test
     public void testNextStation1() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(5);
 
@@ -283,7 +283,7 @@ public class RadioTest {
 
     @Test
     public void testStationPrev1() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(7);
 
@@ -305,6 +305,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
 
 }
 
